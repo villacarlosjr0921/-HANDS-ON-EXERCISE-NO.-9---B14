@@ -1,0 +1,43 @@
+body{
+    margin: auto;
+    background-color: yellow;
+}
+.head{
+    text-align: center;
+    border: 1px solid black;
+    width: 130px;
+    height: 35px;
+    margin: auto;
+    background-color: white;
+    margin-top: 100px;
+    font-size: 24px;
+}
+.box{
+    margin-left: 150px;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 30px 20px;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    background-color: yellow;
+}
+.box1{
+    border: 1px solid;
+    padding: 5px 5px;
+    width: 310px;
+    background: white;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+@media screen and (max-width: 1000px) {
+    .box{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 768px) {
+    .box{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
